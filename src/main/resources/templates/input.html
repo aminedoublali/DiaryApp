@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 </head>
 <body>
-	<h1>DIaryApp</h1>
+	<h1>DiaryApp</h1>
 	<form action="#" method="get" th:action="@{/confirm}" th:object="${form}">
 		<p>タイトル: <input type="text" name="title" ></p>
 		<div th:if="${#fields.hasErrors('title')}" th:errors="*{title}" class="error">タイトルを記入してください</div>
