@@ -84,7 +84,7 @@ public class DiaryController {
         // 値がnullの場合も許可するOptionalで取得
         Optional<Diary> opt1 = diarydao.findById(id);
         Diary s1 = opt1.get();
-        model.addAttribute("oneStaff", s1);
+        model.addAttribute("oneDiary", s1);
         return "edit";
     }
 

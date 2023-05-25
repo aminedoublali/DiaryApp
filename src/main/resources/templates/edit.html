@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<title>Hello</title>
+<title>Dary</title>
 <meta charset="utf-8" />
 </head>
 <body>
 	<h1>JPA(SELECT:１件表示→UPDATE:更新)編集画面</h1>
-	<div th:object="${oneStaff}">
+	<div th:object="${oneDiary}">
 		<form method="get" action="#" th:action="@{/edit/__*{id}__/exe}">
 			<p>
 				番号：<span th:text="*{id}"></span>
