@@ -3,7 +3,6 @@ package com.example.diary.Form;
 public class Form {
     private String title;
     private String content;
-    private String create_date;
 
     public Form() {
     }
@@ -12,7 +11,15 @@ public class Form {
         return title;
     }
 
-    public void setName(String title) {
+    public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 }

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Hello</title>
+<meta charset="utf-8" />
+</head>
+<body>
+	<h1>JPA(SELECT:１件表示→UPDATE:更新)編集画面</h1>
+	<div th:object="${oneStaff}">
+		<form method="get" action="#" th:action="@{/edit/__*{id}__/exe}">
+			<p>
+				番号：<span th:text="*{id}"></span>
+				<input type="hidden" name="id" th:value="*{id}">
+			</p>
+			<p>名前：<input type="text" name="title" th:value="*{title}"></p>
+			<p>コメント：<input type="text" name="content" th:value="*{content}"></p>
+			<input type="submit" value="送信">
+		</form>
+	</div>
+</body>
+</html>

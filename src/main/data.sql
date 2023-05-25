@@ -1,0 +1,1 @@
+INSERT INTO diary (title, content) VALUES ('Sample Title', 'Sample Content');

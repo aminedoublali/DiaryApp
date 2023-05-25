@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>DIaryApp</title>
+<meta charset="utf-8" />
+</head>
+<body>
+	<h1>日記-確認画面</h1>
+	<p>入力内容ここから</p>
+	<p th:text="${form.title}"></p>
+	<p th:text="${form.coment}"></p>
+	<p>入力内容ここまで</p>
+	<form action="#" method="get" th:action="@{/form}">
+		<input type="hidden" name="title" th:value="${form.title}">
+		<input type="hidden" name="content" th:value="${form.content}">
+		<input type="submit" value="入力画面に戻る">
+	</form>
+	<form action="#" method="get" th:action="@{/complete}">
+		<input type="hidden" name="title" th:value="${form.title}">
+		<input type="hidden" name="content" th:value="${form.content}">
+		<input type="submit" value="完了画面へ進む">
+	</form>
+</body>
+</html>

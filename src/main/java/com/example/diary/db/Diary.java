@@ -14,7 +14,6 @@ public class Diary {
     private Long id;
     private String title;
     private String content;
-    private String create_date;
 
     public Long getId() {
         return id;
@@ -41,8 +40,8 @@ public class Diary {
         return content;
     }
 
-    public void setComment(String create_date) {
-        this.create_date = create_date;
+    public void setContent(String content) {
+        this.content = content;
     }
 
 }
